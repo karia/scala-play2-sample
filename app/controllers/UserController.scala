@@ -29,6 +29,7 @@ class UserController @Inject()(val dbConfigProvider: DatabaseConfigProvider,
       // 一覧画面を表示
       Ok(views.html.user.list(users))
     }
+  }
 
   /**
    * 編集画面表示
@@ -49,7 +50,4 @@ class UserController @Inject()(val dbConfigProvider: DatabaseConfigProvider,
    * 削除実行
    */
   def remove(id: Long) = TODO
-
-}
-
 }
